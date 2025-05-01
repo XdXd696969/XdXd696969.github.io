@@ -28,20 +28,24 @@ export default function RootLayout({
             >
               Team
             </Link>
-            <Image
-              className="cursor-pointer hover:scale-110 transition-all duration-300"
-              src="/twitter.png"
-              alt="Twitter"
-              width={45}
-              height={45}
-            />
-            <Image
-              className="cursor-pointer hover:scale-110 transition-all duration-300"
-              src="/medium.png"
-              alt="Telegram"
-              width={45}
-              height={45}
-            />
+            <Link href="https://x.com/dnn_on_x" target="_blank">
+              <Image
+                className="cursor-pointer hover:scale-110 transition-all duration-300"
+                src="/twitter.png"
+                alt="Twitter"
+                width={45}
+                height={45}
+              />
+            </Link>
+            <Link href="https://medium.com/DNN" target="_blank">
+              <Image
+                className="cursor-pointer hover:scale-110 transition-all duration-300"
+                src="/medium.png"
+                alt="Telegram"
+                width={45}
+                height={45}
+              />
+            </Link>
           </div>
         </nav>
         {children}
