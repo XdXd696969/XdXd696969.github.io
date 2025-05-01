@@ -22,7 +22,7 @@ export default function TeamPage() {
                 <h3 className="text-xl font-medium text-white mb-1">Sir Doge Of The Coin</h3>
                 <p className="text-gray-500 mb-1">Co-Founder</p>
                 <Link
-                  href="https://twitter.com/dogeofficialceo"
+                  href="https://x.com/dogeofficialceo"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-gray-300 hover:text-[#FFDA97] transition-colors"
@@ -43,7 +43,7 @@ export default function TeamPage() {
                 <h3 className="text-xl font-medium text-white mb-1">Size Chad</h3>
                 <p className="text-gray-500 mb-1">Co-Founder</p>
                 <Link
-                  href="https://twitter.com/sizechad"
+                  href="https://x.com/sizechad"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-gray-300 hover:text-[#FFDA97] transition-colors"
