@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
+import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "DNN",
@@ -16,8 +18,32 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <nav className="p-8"></nav>
+      <body className={montserrat.className}>
+        <nav className="py-8 px-16 border-b border-gray-600 flex justify-between items-center">
+          <Image src="/logo.png" alt="DNN Logo" width={100} height={100} />
+          <div className="flex items-center gap-2">
+            <Link
+              href="/team"
+              className="mr-6 text-lg cursor-pointer hover:scale-105 transition-all duration-300"
+            >
+              Team
+            </Link>
+            <Image
+              className="cursor-pointer hover:scale-110 transition-all duration-300"
+              src="/twitter.png"
+              alt="Twitter"
+              width={45}
+              height={45}
+            />
+            <Image
+              className="cursor-pointer hover:scale-110 transition-all duration-300"
+              src="/medium.png"
+              alt="Telegram"
+              width={45}
+              height={45}
+            />
+          </div>
+        </nav>
         {children}
       </body>
     </html>
