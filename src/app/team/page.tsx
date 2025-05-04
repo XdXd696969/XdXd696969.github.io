@@ -5,13 +5,13 @@ import Link from "next/link";
 export default function TeamPage() {
   return (
     <main className="p-4">
-      <div className="container mx-auto text-center mt-4">
-        <h1 className="text-[75px] font-bold uppercase tracking-wide bg-gradient-to-r from-[#ffffff] to-[#FFDA97] bg-clip-text text-transparent">
+      <div className="container mx-auto text-center">
+        <h1 className="text-[60px] font-bold uppercase tracking-wide bg-gradient-to-r from-[#ffffff] to-[#FFDA97] bg-clip-text text-transparent">
           Team
         </h1>
       </div>
 
-      <div className="container mx-auto mt-8">
+      <div className="container mx-auto mt-2">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <div className="relative group">
             <div className="bg-[#1a1a1a] rounded-[32px] p-6 transform transition-all duration-300 shadow shadow-amber-400 hover:scale-[1.02] hover:shadow hover:shadow-amber-400">
